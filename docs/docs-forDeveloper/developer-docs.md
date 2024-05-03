@@ -74,4 +74,4 @@ The Social Media App incorporates manager files to segregate the responsibilitie
 
 
 
-**These files are fully structured 🚀 and follow the law of separation each and every functionality is separate reponsible only one functionality and also encapsulate the data and various methods into the class**
+**These files are fully structured 🚀 and adhere to the principle of separation of concerns. Each functionality is separated and responsible for only one aspect, while also encapsulating data and various methods within the class.**
