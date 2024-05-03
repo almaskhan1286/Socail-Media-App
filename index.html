@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signIn</title>
+    <link rel="stylesheet" href="./public/output.css">
+  
+    <style scoped>
+      .drop-shadow-custom {
+        transition: all 0.25s ease;
+      }
+    
+      .drop-shadow-custom:hover {
+        box-shadow: 0 10px 30px -15px rgba(217, 219, 223, 0.7);  /* Custom shadow with rgba color */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex flex-col justify-center items-center  bg-gray-900 text-white h-screen w-screen">
+      <div 
+        class="flex flex-col gap-y-4 justify-center items-center shadow-md hover:shadow-2xl drop-shadow-custom" 
+        style="width: 20rem; height: 70vh;"
+      >
+        <div>
+          <h1 class="text-9xl font-serif font-bold">SignIn</h1>
+        </div>
+        <form 
+          id="signInForm" 
+          class="flex flex-col"
+        >
+          <label class="font-semibold" for="username">Username:</label>
+          <input 
+            class="border border-gray-800 rounded-md outline-none active:outline-none !bg-gray-700 py-1 px-2 my-2" 
+            type="text" 
+            id="username" 
+            placeholder="Username"
+            style="width: 15rem;"
+          />
+          <label class="mt-4 font-semibold" for="password">Password:</label>
+          <input 
+            class="border border-gray-800 rounded-md outline-none active:outline-none !bg-gray-700 py-1 px-2 my-2"
+            type="password" 
+            id="password" 
+            placeholder="Password"
+          />
+          <button 
+            type="submit"
+            class="py-2 px-4 font-semibold bg-gray-800 mt-10 rounded-md shadow-md"
+          >
+            SignIn
+          </button>
+           
+        </form>
+      </div>
+    </div>
+
+    <!-- Script File -->
+  <script src="./src/auth/user-login.js"></script>
+
+  </body>
+</html>
