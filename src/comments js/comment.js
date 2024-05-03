@@ -95,18 +95,18 @@ function renderCommentsOnPage(comments) {
             const commentMarkup = `
                 <div class="p-5 comment-container">
                     <div class= "flex justify-between items-center">
-                        <h3 class= "text-lg font-semibold">${comment.author} <span id="comment-timestamp-${comment.id}" class="text-gray-600 font-semibold text-sm">${updateTimeDifference(comment.timestamp)}</span></h3>
+                        <h3 class= "text-lg text-white font-semibold">${comment.author} <span id="comment-timestamp-${comment.id}" class="text-gray-300 font-semibold text-sm">${updateTimeDifference(comment.timestamp)}</span></h3>
                             <div class="cursor-pointer mr-6">
-                            <i class="material-icons mr-2 edit-btn" style="font-size: 1rem;" data-comment-id="${comment.id}">edit</i>
-                            <i class="material-icons mr-2 delete-btn"  style="font-size: 1rem;" data-comment-id="${comment.id}">delete</i>
+                            <i class="material-icons mr-2 text-gray-400 hover:text-gray-200 edit-btn" style="font-size: 1rem;" data-comment-id="${comment.id}">edit</i>
+                            <i class="material-icons mr-2 text-gray-400 hover:text-gray-200 delete-btn"  style="font-size: 1rem;" data-comment-id="${comment.id}">delete</i>
                             </div>
                             </div>
-                            <p class="my-3 pl-5">${comment.content}</p>
-                            <div class="cursor-pointer pl-5">
-                            <i class="material-icons mr-2" style="font-size: 1rem;">thumb_up</i>   
-                            <i class="material-icons mr-3" style="font-size: 1rem;">thumb_down</i>   
-                            <i class="material-icons mr-2" style="font-size: 1rem;">reply</i>
-                        <i class="material-icons mr-3" style="font-size: 1rem;">share</i>   
+                            <p class="my-3 pl-5 text-gray-300">${comment.content}</p>
+                            <div class="cursor-pointer  pl-5">
+                            <i class="material-icons text-gray-400 hover:text-gray-200 mr-2" style="font-size: 1rem;">thumb_up</i>   
+                            <i class="material-icons text-gray-400 hover:text-gray-200 mr-3" style="font-size: 1rem;">thumb_down</i>   
+                            <i class="material-icons text-gray-400 hover:text-gray-200 mr-2" style="font-size: 1rem;">reply</i>
+                        <i class="material-icons text-gray-400 hover:text-gray-200 mr-3" style="font-size: 1rem;">share</i>   
                     </div>
 
 
