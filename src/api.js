@@ -35,6 +35,10 @@ class API {
         return this.generateFetchMethod(`https://dummyjson.com/posts/${postId}`, 'fetchPosts');
     }
 
+    static async fetchSearchPost(postId) {
+        return this.request(`https://dummyjson.com/posts/${postId}/comments`, 'fetchPostComments');
+    }
+
     static async fetchComments() {
         return this.generateFetchMethod('https://dummyjson.com/comments', 'fetchComments');
     }
@@ -50,6 +54,8 @@ class API {
     static async fetchPostComments(postId) {
         return this.request(`https://dummyjson.com/posts/${postId}/comments`, 'fetchPostComments');
     }
+
+
 }
 
 export default API;

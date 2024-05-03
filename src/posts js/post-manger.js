@@ -137,6 +137,12 @@ postContainer.addEventListener('click', function(e) {
 
 }
 
+// Function to search posts...
+
+function searchPost() {
+    
+}
+
 // Function to logout...
 
 function userLogout() {
